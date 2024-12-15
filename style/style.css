@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 15px;
+}
+
+.container  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.card-block {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    height: auto;
+    padding: 15px;
+}
+
+.card a {
+    margin-top: 15px;
+}
+
+.btn-show {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .container  h1 {
+        font-size: 20px;
+    }
+
+    .card-block {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .container {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .card-block {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        border: none;
+    }
+}
